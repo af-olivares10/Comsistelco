@@ -21,8 +21,8 @@
 					$("#title").html(data.page.name);
 					$("#page-title").html(data.page.name);
 
-					$("#banner").css("background",`url(${data.page.image})`);
-					$("#banner-description").css("background",`url(${data.page.image})`);
+					$("#banner").css("background",`url("${data.page.image}")`);
+					$("#banner-description").css("background",`url("${data.page.image}")`);
 					data.page.sections.forEach((s,i)=>{
 						$("#sectioncontainer").append(`<div class = 'section' id= 'section${i}' ></div>`);
 						$(`#section${i}`).append(`<p class = 'section-title'>${s.title}</p>`);
