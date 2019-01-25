@@ -5329,7 +5329,7 @@ body {
 /************************************************************Custom************************************************************/
 
 #banner{
-  background-size: cover !important;
+  background-size: 100% 100% !important;
   background-repeat:  no-repeat; 
 } 
 #banner-description{
