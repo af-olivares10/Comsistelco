@@ -56,7 +56,7 @@
 								let underBarPages = data.pages.filter(p=> !underBarCategories.find(pc=>pc.name===p.pageCategory) )
 
 								//pages inside a category placed on the bar x2
-								let lastUnderBarPages = underBarPages.splice(5);
+								let lastUnderBarPages = underBarPages.splice(4);
 								underBarPages.forEach(p=>{
 								$(`#page-menu-column-1-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna?name=${p.url} " id ="nav-bar-item" >${p.name}</a>`);
 							})

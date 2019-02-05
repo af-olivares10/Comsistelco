@@ -5357,8 +5357,13 @@ body {
   height: 30%;
 
 }
-#page-menu-column-1{
-
+#page-menu-column-1-ServiciosIntegrales{
+  background-color: #e5f3ff !important;
+}
+#page-menu-column-2-ServiciosIntegrales{
+  margin: 0 !important;
+  padding: 0;
+  background-color: #fffdea !important;
 }
 .footer-logo{
   width: 100% !important;
