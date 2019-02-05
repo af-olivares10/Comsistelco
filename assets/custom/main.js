@@ -58,10 +58,10 @@
 								//pages inside a category placed on the bar x2
 								let lastUnderBarPages = underBarPages.splice(5);
 								underBarPages.forEach(p=>{
-								$(`#page-menu-column-1-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna?name=${p.url}" >${p.name}</a>`);
+								$(`#page-menu-column-1-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna?name=${p.url} " id ="nav-bar-item" >${p.name}</a>`);
 							})
 							lastUnderBarPages.forEach(p=>{
-								$(`#page-menu-column-2-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 p-0 m-0" href="interna?name=${p.url}" aria-expanded="false">${p.name}</a>`);
+								$(`#page-menu-column-2-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 p-0 m-0" href="interna?name=${p.url}" aria-expanded="false " id ="nav-bar-item">${p.name}</a>`);
 							})
 							underUnderBarPages.forEach(p=>{
 								$(`#under-bar-category-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna?name=${p.url}" >${p.name}</a>`);
