@@ -5378,3 +5378,6 @@ body {
   padding-left: 66px !important;
   text-align: left;
 }
+.custom-carousel  {
+    background-size: contain !important;
+}
