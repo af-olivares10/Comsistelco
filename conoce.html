@@ -110,13 +110,9 @@
       </nav>
     </section>
 	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<section class="header9 cid-r9dQYFaWEF" style="height: 400px; margin-top: 130px; background: url('assets/images/bannerconoce.jpg')" id ="banner">
+  </section>
 
-		<section class="header9 cid-r9dQYFaWEF" style="height: 400px; background:url(assets/images/bannerconoce.jpg)" id ="banner" >
-
-			<!-- <div id= "banner-description" ></div> -->
-
-
-		</section>
 		<section class="features9 cid-r9dRsC17x0" id="features9-18">
 			<br>
 
@@ -254,20 +250,48 @@
 									</div>
 
 
-									<div class="col-lg-5 col-md-4 pb-3">
-										<h3 class="mbr-fonts-style mbr-section-title mbr-white align-left display-7">
-										¡SUSCRIBETE!</h3>
-										<h3 class="mbr-fonts-style mbr-offer mbr-white align-left display-4">Al suscribirse a nuestra lista de correo siempre estarás al día con las últimas noticias de nosotros.</h3>
-										<div class="form-wrap" data-form-type="formoid">
-											<div data-form-alert="" hidden="">Gracias por Suscribirse!</div>
-											<form class="mbr-form" action="https://comsistelco.com/" method="post" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="gkV1+uZor9SZhhRKenDvJyOJl6AAjPybfnimlAXZ3MyeEf17+lpwbXludzs8Ikvk6OewQDlFbRUzBzMDRiywSmRW4KSJWrynXmjM4+Malm7tEtDtYr1UXEz1b9wAQu+C">
-												<button class="icon-btn" type="submit" href="#">
-													<span class="mbri-letter mbr-iconfont mbr-white"></span>
-												</button>
-												<input type="email" class="field" name="email" data-form-field="Email" placeholder="Ingresa tu Email" required="" id="email-footer7-13">
-											</form>
-										</div>
-									</div>
+                                          <div class="col-lg-5 col-md-4 pb-3">
+                                            <h3 class="mbr-fonts-style mbr-section-title mbr-white align-left display-7">
+                                            ¡SUSCRIBETE!</h3>
+                                            <h3 class="mbr-fonts-style mbr-offer mbr-white align-left display-4">Al suscribirse a nuestra lista de correo siempre estarás al día con las últimas noticias de nosotros.</h3>
+                                            <div class="form-wrap" data-form-type="formoid">
+                                              <div data-form-alert="" hidden="">Gracias por Suscribirse!</div>
+                                              <form class="mbr-form" onsubmit="send(event)" method="get" enctype="text/plain" data-form-title="My Mobirise Form">
+                                                <input type="hidden" name="email" data-form-email="true" value="gkV1+uZor9SZhhRKenDvJyOJl6AAjPybfnimlAXZ3MyeEf17+lpwbXludzs8Ikvk6OewQDlFbRUzBzMDRiywSmRW4KSJWrynXmjM4+Malm7tEtDtYr1UXEz1b9wAQu+C">
+                                                <button class="icon-btn" type="submit" href="#">
+                                                  <span class="mbri-letter mbr-iconfont mbr-white"></span>
+                                                </button>
+                                                <input type="email" id="mail" class="field" name="email" data-form-field="Email" placeholder="Ingresa tu Email" required="" id="email-footer7-13">
+                                              </form>
+                                              <script>
+                                                function send(e){
+                                                  e.preventDefault();
+                                                  let emailjsUserId = "user_GpThR5BIq6fdwzWjoBdfK",emailjsAccessToken= "13c3f346298a4789561bd939f2e1a95f", emailjsTemplateId = "template_MIBkV5v3",emailjsServiceId="gmail" ;
+                                                  let mail = document.getElementById("mail").value;
+
+                                                  let data = {
+                                                    service_id: emailjsServiceId,
+                                                    template_id: emailjsTemplateId,
+                                                    user_id: emailjsUserId,
+                                                    template_params:{mail}
+                                                  };
+                                                  fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                                                    method: 'POST',
+                                                    body: JSON.stringify(data),
+                                                    headers: { 'Content-Type': 'application/json' },
+                                                    contentType: 'application/json'
+                                                  }).then((res)=> {
+                                                    alert("¡Gracias por suscribirse!");
+                                                    location="/";
+
+                                                  }).catch((error)=> {
+                                                    console.error(error);
+
+                                                  });
+                                                }
+                                              </script>
+                                            </div>
+                                          </div>
 								</div>
 							</div>
 						</section>

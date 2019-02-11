@@ -1647,7 +1647,9 @@ body {
 .cid-r7VfUkDbT9 .mbr-slider .carousel-indicators li.active,
 .cid-r7VfUkDbT9 .mbr-slider .carousel-indicators li:hover {
   opacity: .9;
+  background-color: white;
 }
+
 .cid-r7VfUkDbT9 .mbr-slider .carousel-indicators li::after,
 .cid-r7VfUkDbT9 .mbr-slider .carousel-indicators li::before {
   content: none;
@@ -2015,9 +2017,6 @@ body {
 @media (min-width: 768px) {
   .carrusel {
     padding: 0 7rem;
-  }
-  .mundo {
-    text-align: right;
   }
 
   .cid-qRBy11cYkr .navbar-dropdown {
@@ -5381,3 +5380,15 @@ body {
 .custom-carousel  {
     background-size: contain !important;
 }
+@media (max-width: 767px){
+
+#info2-7{
+height: 270px !important; 
+width:65;
+margin: 0 auto; 
+}
+}
+ #info2-7 > div > div > div:nth-child(2) > h2{
+width:65%;
+margin: 0 auto; 
+} 
