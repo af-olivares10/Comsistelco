@@ -45,7 +45,7 @@
 							data.pages.filter(p=>p.pageCategory==="Barra").forEach(p=>{
 								$("#last-predefined-on-bar").after(`
 									<li class="nav-item work-please">
-	                					<a class="nav-link link mbr-black text-black display-4" href='interna?name=${p.url}'>${p.name}</a>
+	                					<a class="nav-link link mbr-black text-black display-4" href='interna.html?name=${p.url}'>${p.name}</a>
 	              					</li>
 									`);
 							})
@@ -58,13 +58,13 @@
 								//pages inside a category placed on the bar x2
 								let lastUnderBarPages = underBarPages.splice(4);
 								underBarPages.forEach(p=>{
-								$(`#page-menu-column-1-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna?name=${p.url} " id ="nav-bar-item" >${p.name}</a>`);
+								$(`#page-menu-column-1-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna.html?name=${p.url} " id ="nav-bar-item" >${p.name}</a>`);
 							})
 							lastUnderBarPages.forEach(p=>{
-								$(`#page-menu-column-2-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 p-0 m-0" href="interna?name=${p.url}" aria-expanded="false " id ="nav-bar-item">${p.name}</a>`);
+								$(`#page-menu-column-2-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 p-0 m-0" href="interna.html?name=${p.url}" aria-expanded="false " id ="nav-bar-item">${p.name}</a>`);
 							})
 							underUnderBarPages.forEach(p=>{
-								$(`#under-bar-category-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna?name=${p.url}" >${p.name}</a>`);
+								$(`#under-bar-category-${p.pageCategory.replace(/\s/g, '')}`).append(`<a class="mbr-black text-black dropdown-item display-4 " href="interna.html?name=${p.url}" >${p.name}</a>`);
 							})
 
 							$(".dropdown").mouseover((event)=>{$(event.currentTarget).addClass("open") })
