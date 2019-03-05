@@ -5378,17 +5378,27 @@ body {
   text-align: left;
 }
 .custom-carousel  {
-    background-size: contain !important;
+  background-size: contain !important;
 }
 @media (max-width: 767px){
 
-#info2-7{
-height: 270px !important; 
-width:65;
-margin: 0 auto; 
+  #info2-7{
+    height: 270px !important; 
+    width:65;
+    margin: 0 auto; 
+  }
 }
-}
- #info2-7 > div > div > div:nth-child(2) > h2{
-width:65%;
-margin: 0 auto; 
+#info2-7 > div > div > div:nth-child(2) > h2{
+  width:65%;
+  margin: 0 auto; 
 } 
+.calidad-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.calidad{
+  max-width: 200px;
+  height: 200px;
+  margin: 20px;
+}
