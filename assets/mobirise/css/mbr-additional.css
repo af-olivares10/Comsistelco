@@ -5329,11 +5329,11 @@ body {
 
 #banner{
   background-size: 100% 100% !important;
-  background-repeat:  no-repeat; 
-} 
+  background-repeat:  no-repeat;
+}
 #banner-description{
   background-size: contain !important;
-  background-repeat:  no-repeat!important; 
+  background-repeat:  no-repeat!important;
   max-width: 100%;
   height: 100px !important;
 }
@@ -5341,7 +5341,7 @@ body {
   color:  #23155b;
   border-bottom:  2px #d4a100 solid;
   text-align:   left !important;
-  font-weight:  bolder;   
+  font-weight:  bolder;
   font-size: 2em;
 }
 .section-content{
@@ -5383,15 +5383,15 @@ body {
 @media (max-width: 767px){
 
   #info2-7{
-    height: 270px !important; 
+    height: 270px !important;
     width:65;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 #info2-7 > div > div > div:nth-child(2) > h2{
   width:65%;
-  margin: 0 auto; 
-} 
+  margin: 0 auto;
+}
 .calidad-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -5401,4 +5401,55 @@ body {
   max-width: 200px;
   height: 200px;
   margin: 20px;
+}
+#entry-container{
+  height: auto;
+  display: flex;
+  flex-flow:row wrap;
+
+}
+.entry{
+  height: 250px;
+  width: 300px;
+}
+.entry-subcontainer{
+  margin: 20px;
+}
+.entry-info{
+  position: absolute;
+  font-size: 15px;
+  transform: translateX(-50%);
+  height: 70px;
+  bottom: 20px;
+  background-color: #23155bd1;
+  color: white;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: left;
+  line-height: 13.3333333333333333px;
+
+}
+.entry:hover{
+  cursor: pointer;
+}
+.entry:hover .entry-info{
+  height: 250px;
+}
+.titili-quidri{
+  margin: 30px 3px;
+}
+.disglosi-quidri{
+  font-size: 12px;
+}
+.entry-text{
+  text-align: left !important;
+  white-space: pre-line;
+}
+#entry-image{
+  width: 100%
+}
+.entry-image{
+  width: 740px;
+  height: 560px;
+  margin: 30px auto;
 }
