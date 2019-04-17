@@ -5411,6 +5411,7 @@ body {
 .entry{
   height: 250px;
   width: 300px;
+  position: relative;
 }
 .entry-subcontainer{
   margin: 20px;
@@ -5420,7 +5421,7 @@ body {
   font-size: 15px;
   transform: translateX(-50%);
   height: 70px;
-  bottom: 20px;
+  bottom: 0px;
   background-color: #23155bd1;
   color: white;
   overflow: hidden;
